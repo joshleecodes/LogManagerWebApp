@@ -1,37 +1,75 @@
-/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
-for details on configuring this project to bundle and minify static web assets. */
+/*STYLING FOR SHARED ELEMENTS*/
 body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
+.title-bar {
+    display: flex;
+    align-items: center;
+    background-color: #23272A;
+    width: 99vw;
+    height: 5vh;
+    padding-left: 1vw;
+}
+
+.title-first, .title-second {
+    font-size: 1.8em;
+    color: white;
+    text-decoration: none;
+}
+
+.title-first {
+    font-weight: lighter;
+}
+
+.title-second {
+    font-weight: 900;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1vw;
+    background-color: #2C2F33;
+    height: 95vh;
+    width: 10vw;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav a {
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+}
+
+.directory-input {
+    background-color: #23272a;
+    border: none;
+    color: white;
+}
+
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+    background-color: #42464d;
+    flex-grow: 1;
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+footer {
+    color: #a6a7a8;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
+/*STYLING FOR FIND FILE ELEMENTS*/
