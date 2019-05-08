@@ -2,15 +2,16 @@
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 .title-bar {
     display: flex;
     align-items: center;
     background-color: #23272A;
-    width: 99vw;
     height: 5vh;
-    padding-left: 1vw;
+    width: 100vw;
 }
 
 .title-first, .title-second {
@@ -20,11 +21,13 @@ body {
 }
 
 .title-first {
+    margin-left: 1vw;
     font-weight: lighter;
 }
 
 .title-second {
     font-weight: 900;
+    flex-grow: 1;
 }
 
 .main-wrapper {
@@ -35,22 +38,33 @@ body {
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 1vw;
-    background-color: #2C2F33;
     height: 95vh;
     width: 10vw;
+    background-color: #2C2F33;
 }
 
-.navbar ul {
+.directory-input {
+    height: 5vh;
+    text-align: center;
+    border-radius: 0 0 6px 6px;
+    padding: 0;
+}
+
+.nav {
     display: flex;
     flex-direction: column;
+    height: inherit;
+    margin: 5vh 1vw;
     padding: 0;
     list-style-type: none;
 }
 
+.nav li {
+    margin: 2vh 0;
+}
+
 .nav a {
-    font-size: 1em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
 }
@@ -61,15 +75,38 @@ body {
     color: white;
 }
 
+.output-toggle {
+    align-self: flex-end;
+    background-color: #42464d;
+    height: 25vh;
+    width: 2vw;
+    border-radius: 6px 0 0 6px;
+}
+
+.output-toggle p {
+    font-size: 1.2em;
+    color: white;
+    margin-top: 8vh;
+    opacity: 0.6;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+}
+
+.nav-footer {
+    align-self: center;
+    margin-top: 10vh;
+    color: #a6a7a8;
+    font-size: 0.8em;
+}
+
 .body-content {
-    padding: 0 15px;
     background-color: #42464d;
     flex-grow: 1;
 }
 
-footer {
-    color: #a6a7a8;
-}
+
 
 
 /*STYLING FOR FIND FILE ELEMENTS*/
