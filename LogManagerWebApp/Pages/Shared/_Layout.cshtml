@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - LogManagerWebApp</title>
+    <title>@Model.Title - LogManager</title>
 
     <environment include="Development">
         <link rel="stylesheet" href="~/css/site.css" />
@@ -20,15 +20,14 @@
     <a asp-page="/index" class="title-second">MANAGER</a>
 </header>
 
-
 <div class="main-wrapper">
     <nav class="navbar">
         <input class="directory-input" type="text" placeholder="Enter a directory">
         <ul class="nav">
-            <li><a asp-page="/FindFile">FIND FILE</a></li>
-            <li><a asp-page="/Timestamp">TIMESTAMP</a></li>
-            <li><a asp-page="/Help">HELP</a></li>
-            <li><a asp-page="/Contact">CONTACT</a></li>
+            <li><a asp-page="/Index">SEARCH</a></li>
+            <li><a asp-page="/Index">TIMESTAMP</a></li>
+            <li><a asp-page="/Index">HELP</a></li>
+            <li><a asp-page="/Index">CONTACT</a></li>
         </ul>
         <div class="output-toggle">
             <p>OUTPUT</p>
@@ -36,11 +35,10 @@
         <p class="nav-footer">&copy; 2019 - LogManager</p>
     </nav>
     
-    <partial name="_CookieConsentPartial" />
+    <partial name="_CookieConsentPartial"/>
     <div class="container body-content">
         @RenderBody()
     </div>
-
 </div>
 
 <environment include="Development">
