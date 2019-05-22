@@ -4,6 +4,7 @@ namespace LogManagerWebApp.Pages
 {
     public class IndexModel : PageModel
     {
+        public string CurrentPartial { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string HelpTitle { get; set; }
@@ -11,6 +12,7 @@ namespace LogManagerWebApp.Pages
 
         public void OnGet()
         {
+            CurrentPartial = "";
             Title = "Section Title";
             Description = "Here is a paragraph that introduces the section, its capabilities and restrictions.";
             HelpTitle = "Having Trouble?";
