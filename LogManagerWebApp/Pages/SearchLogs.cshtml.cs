@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LogManagerWebApp.Pages
 {
-    public class SearchLogsPartialModel : PageModel
+    public class SearchLogsModel : PageModel
     {
         public void OnGet()
         {

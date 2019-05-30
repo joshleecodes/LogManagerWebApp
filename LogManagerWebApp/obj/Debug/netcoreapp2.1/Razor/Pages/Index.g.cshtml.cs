@@ -69,7 +69,7 @@ using LogManagerWebApp;
             WriteLiteral("</p>\r\n    <div class=\"section-content\">\r\n        <!--Html.RenderPartial(\"PartialViews/\" + Model.CurrentPartial) with relevant at symbols-->\r\n        <!--OR list all partials with if statement at start (look at _CookieConsentPartial)-->\r\n        ");
             EndContext();
             BeginContext(406, 35, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "f73c2b8f8fa94b4c919513870d1dd67c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "13890c42c41d48f386ff81c90da915c8", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
