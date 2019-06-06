@@ -54,11 +54,8 @@ C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\bin\Debug
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\bin\Debug\netcoreapp2.1\LogManagerWebApp.pdb
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\bin\Debug\netcoreapp2.1\LogManagerWebApp.Views.dll
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\bin\Debug\netcoreapp2.1\LogManagerWebApp.Views.pdb
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.csprojAssemblyReference.cache
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.Views.pdb
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.csproj.CopyComplete
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\SearchLogs.g.cshtml.cs
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Timestamp.g.cshtml.cs
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Help.g.cshtml.cs
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Contact.g.cshtml.cs
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Logs\List.g.cshtml.cs
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.csprojAssemblyReference.cache

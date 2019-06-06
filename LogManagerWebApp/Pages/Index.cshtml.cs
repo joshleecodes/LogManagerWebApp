@@ -4,7 +4,7 @@ namespace LogManagerWebApp.Pages
 {
     public class IndexModel : PageModel
     {
-        public string CurrentPartial { get; set; }
+        public string CurrentDirectory { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public string HelpTitle { get; set; }
@@ -12,7 +12,7 @@ namespace LogManagerWebApp.Pages
 
         public void OnGet()
         {
-            CurrentPartial = "";
+            CurrentDirectory = "C:TEST/CURRENT/DIRECTORY/EXAMPLE";
             Title = "Section Title";
             Description = "Here is a paragraph that introduces the section, its capabilities and restrictions.";
             HelpTitle = "Having Trouble?";

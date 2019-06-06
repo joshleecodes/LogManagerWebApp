@@ -4,13 +4,4 @@
 <div class="section-wrapper">
     <h2 class="section-title">@Model.Title</h2>
     <p class="section-description">@Model.Description</p>
-    <div class="section-content">
-        <!--Html.RenderPartial("PartialViews/" + Model.CurrentPartial) with relevant at symbols-->
-        <!--OR list all partials with if statement at start (look at _CookieConsentPartial)-->
-        <partial name="SearchLogsPartial"/>
-    </div>
-    <div class="section-help">
-        <h3 class="help-title">@Model.HelpTitle</h3>
-        <p class="help-description">@Model.HelpDescription</p>
-    </div>
 </div>

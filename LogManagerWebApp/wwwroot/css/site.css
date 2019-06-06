@@ -6,106 +6,24 @@ body {
     width: 100vw;
 }
 
-.title-bar {
-    display: flex;
-    align-items: center;
-    background-color: #23272A;
-    height: 5vh;
-    width: 100vw;
-}
-
-.title-first, .title-second {
-    font-size: 1.8em;
-    color: white;
-    text-decoration: none;
-}
-
-.title-first {
-    margin-left: 1vw;
-    font-weight: lighter;
-}
-
-.title-second {
-    font-weight: 900;
-    flex-grow: 1;
-}
-
-.main-wrapper {
+.nav-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    width: auto;
 }
 
-.navbar {
+.form-inline {
     display: flex;
-    flex-direction: column;
-    height: 95vh;
-    width: 10vw;
-    background-color: #2C2F33;
-}
-
-.directory-input {
-    height: 5vh;
-    text-align: center;
-    border-radius: 0 0 6px 6px;
-    padding: 0;
-}
-
-.nav {
-    display: flex;
-    flex-direction: column;
-    height: inherit;
-    margin: 5vh 1vw;
-    padding: 0;
-    list-style-type: none;
-}
-
-.nav li {
-    margin: 2vh 0;
-}
-
-.nav a {
-    font-size: 1.2em;
-    text-decoration: none;
-    color: white;
-}
-
-.directory-input {
-    background-color: #23272a;
-    border: none;
-    color: white;
-}
-
-.output-toggle {
-    align-self: flex-end;
-    background-color: #42464d;
-    height: 25vh;
-    width: 2vw;
-    border-radius: 6px 0 0 6px;
-}
-
-.output-toggle p {
-    font-size: 1.2em;
-    color: white;
-    margin-top: 8vh;
-    opacity: 0.6;
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-}
-
-.nav-footer {
+    flex-direction: row;
+    height: 3.5vh;
     align-self: center;
-    margin-top: 10vh;
-    color: #a6a7a8;
-    font-size: 0.8em;
-}
-
-.body-content {
-    background-color: #42464d;
-    flex-grow: 1;
 }
 
 
 
-/*STYLING FOR FIND FILE ELEMENTS*/
+/*STYLING FOR SEARCH ELEMENTS*/
+
+
+
+/*STYLING FOR HELP ELEMENTS*/
