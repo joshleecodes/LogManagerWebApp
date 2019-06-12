@@ -13,7 +13,6 @@ namespace LogManager.Core
 
     public class SystemUtility : ISystemUtility
     {
-
         public bool IsValidDirectory(string directoryInput)
         {
             if (!string.IsNullOrEmpty(directoryInput) && Directory.Exists(directoryInput))

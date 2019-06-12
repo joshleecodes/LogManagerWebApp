@@ -10,3 +10,15 @@ C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.csproj.CopyComplete
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.dll
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.pdb
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\bin\Debug\netcoreapp2.1\LogManager.Data.deps.json
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\bin\Debug\netcoreapp2.1\LogManager.Data.dll
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\bin\Debug\netcoreapp2.1\LogManager.Data.pdb
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\bin\Debug\netcoreapp2.1\LogManager.Core.dll
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\bin\Debug\netcoreapp2.1\LogManager.Core.pdb
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.csprojAssemblyReference.cache
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.csproj.CoreCompileInputs.cache
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.AssemblyInfoInputs.cache
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.AssemblyInfo.cs
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.csproj.CopyComplete
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.dll
+C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Data\obj\Debug\netcoreapp2.1\LogManager.Data.pdb

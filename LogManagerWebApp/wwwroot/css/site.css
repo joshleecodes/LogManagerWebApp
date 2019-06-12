@@ -1,10 +1,15 @@
 /*STYLING FOR SHARED ELEMENTS*/
+
 body {
     font-family: 'Lato', sans-serif;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
+    margin: 5vh 0vw;
+    height: 90vh;
+    width: 95vw;
     display: flex;
+}
+
+.navbar {
+    border-bottom: solid 1px #e0a800;
 }
 
 .nav-wrapper {
@@ -14,6 +19,14 @@ body {
     width: auto;
 }
 
+.navbar-brand {
+    color: #0c314e;
+}
+
+.icon-bar {
+    color: black;
+}
+
 .form-inline {
     display: flex;
     flex-direction: row;
@@ -21,16 +34,37 @@ body {
     align-self: center;
 }
 
-.modal-header {
+.modal-header{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .directory-btn {
     border-radius: 0 25px 25px 0;
 }
-/*STYLING FOR SEARCH ELEMENTS*/
 
+.directory-btn:focus {
+    outline: none;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+/*STYLING FOR INDEX ELEMENTS*/
+
+.section-wrapper {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.alert {
+    margin-top: 2px;
+    text-align: center;
+}
 
 
 /*STYLING FOR HELP ELEMENTS*/
