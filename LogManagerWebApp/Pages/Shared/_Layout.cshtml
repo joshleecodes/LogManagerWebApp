@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@model  BaseModel
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -19,80 +20,82 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container nav-wrapper">
-        <div class="navbar-header">
-            <a asp-page="/Index" class="navbar-brand">LogManager</a>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container nav-wrapper">
+            <div class="navbar-header">
+                <a asp-page="/Index" class="navbar-brand">LogManager</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a asp-page="/Index">Search</a></li>
+                    <li><a asp-page="/Index">Help</a></li>
+                </ul>
+            </div>
+            <div class="input-group form-inline">
+                <input class="form-control" id="disabledTextInput" type="text" placeholder="@Model.CurrentDirectory" readonly>
+                <div class="input-group-prepend">
+                    <button class="btn btn-info directory-btn" type="button" data-toggle="modal" data-target="#directoryInputModal">Change Directory</button>
+                </div>
+            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a asp-page="/Index">SEARCH</a></li>
-                <li><a asp-page="/Index">HELP</a></li>
-            </ul>
-        </div>
-        <div class="input-group form-inline">
-            <input class="form-control" id="disabledTextInput" type="text" placeholder=@Model.CurrentDirectory readonly>
-            <div class="input-group-prepend">
-                <button class="btn btn-info directory-input-btn" type="button" data-toggle="modal" data-target="#directoryInputModal">Change Directory</button>
+    </nav>
+    
+    <form method="get">
+        <div class="modal fade" id="directoryInputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="directoryInputLabel">Directory Input</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="search" class="form-control" placeholder="@Model.CurrentDirectory" asp-for="RequestedDirectory">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Update Directory</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
+    </form>
+
+    <partial name="_CookieConsentPartial" />
+    <div class="container body-content">
+        @RenderBody()
     </div>
-</nav>
 
-<div class="modal fade" id="directoryInputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="directoryInputLabel">Directory Input</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <input class="form-control" type="text" placeholder="Default input">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Update Directory</button>
-            </div>
-        </div>
-    </div>
-</div>
+    <p class="nav-footer">&copy; 2019 - LogManager</p>
 
-<partial name="_CookieConsentPartial"/>
-<div class="container body-content">
-    @RenderBody()
-</div>
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
 
-<p class="nav-footer">&copy; 2019 - LogManager</p>
-
-<environment include="Development">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-</environment>
-<environment exclude="Development">
-    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
-            asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
-            asp-fallback-test="window.jQuery"
-            crossorigin="anonymous"
-            integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
-            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
-            crossorigin="anonymous"
-            integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
-    </script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
-</environment>
-
-@RenderSection("Scripts", required: false)
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

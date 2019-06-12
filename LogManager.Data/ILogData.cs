@@ -1,13 +1,13 @@
 ﻿using LogManager.Core;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LogManager.Data
 {
     public interface ILogData
     {
-        List<Log> GetLogCalled(string name);
-        List<Log> GetLogContaining(string keyword);
-
+        IEnumerable<Log> GetLogCalled(string name);
+        Log GetLogContaining(string keyword);
     }
 
     public class InMemoryLogData : ILogData
@@ -49,7 +49,7 @@ namespace LogManager.Data
             };
         }
 
-        public List<Log> GetLogCalled(string name)
+        public IEnumerable<Log> GetLogCalled(string name)
         {
             List<Log> Results = new List<Log>();
             foreach (var log in Logs)
@@ -62,20 +62,9 @@ namespace LogManager.Data
             return Results;
         }
 
-        public List<Log> GetLogContaining(string keyword)
+        public Log GetLogContaining(string keyword)
         {
-            List<Log> Results = new List<Log>();
-            foreach (var log in Logs)
-            {
-                for (int i = 0; i < log.Content.Length; i++)
-                {
-                    if (log.Content[i].Contains(keyword))
-                    {
-                        Results.Add(log);
-                    }
-                }
-            }
-            return Results;
+            return Logs.SingleOrDefault(log => log.Content.Contains(keyword));
         }
     }
 }

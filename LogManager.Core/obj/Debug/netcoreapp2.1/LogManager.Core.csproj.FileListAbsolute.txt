@@ -6,4 +6,3 @@ C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfo.cs
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.dll
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.pdb
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.csprojAssemblyReference.cache

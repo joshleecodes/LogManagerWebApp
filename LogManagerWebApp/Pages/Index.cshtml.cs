@@ -1,19 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using LogManager.Core;
+using LogManager.Data;
+using LogManagerWebApp.Pages.Shared;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LogManagerWebApp.Pages
 {
-    public class IndexModel : PageModel
+    public class IndexModel : BaseModel
     {
-        public string CurrentDirectory { get; set; }
-        public string Title { get; set; }
         public string Description { get; set; }
         public string HelpTitle { get; set; }
         public string HelpDescription { get; set; }
 
+        public IndexModel(ILogData logData, ISystemUtility systemUtility):base(logData, systemUtility)
+        {
+        }
+
         public void OnGet()
         {
-            CurrentDirectory = "C:TEST/CURRENT/DIRECTORY/EXAMPLE";
-            Title = "Section Title";
+            UpdateDirectory();
+
+            Title = "Welcome";
+
             Description = "Here is a paragraph that introduces the section, its capabilities and restrictions.";
             HelpTitle = "Having Trouble?";
             HelpDescription =

@@ -4,6 +4,7 @@ body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    display: flex;
 }
 
 .nav-wrapper {
@@ -20,8 +21,14 @@ body {
     align-self: center;
 }
 
+.modal-header {
+    display: flex;
+    flex-direction: row;
+}
 
-
+.directory-btn {
+    border-radius: 0 25px 25px 0;
+}
 /*STYLING FOR SEARCH ELEMENTS*/
 
 

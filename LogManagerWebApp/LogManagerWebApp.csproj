@@ -15,4 +15,9 @@
     <Folder Include="Controller\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LogManager.Core\LogManager.Core.csproj" />
+    <ProjectReference Include="..\LogManager.Data\LogManager.Data.csproj" />
+  </ItemGroup>
+
 </Project>
