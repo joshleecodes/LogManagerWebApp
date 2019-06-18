@@ -15,6 +15,7 @@ namespace LogManagerWebApp.Pages.Shared
         public readonly ISystemUtility _systemUtility;
 
         public string Title { get; set; }
+        public IEnumerable<Log> Logs { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public string CurrentDirectory { get; set; }
@@ -42,6 +43,11 @@ namespace LogManagerWebApp.Pages.Shared
             {
                 RequestedDirectory = CurrentDirectory;
             }
+        }
+
+        public void DisplayDirectoryFeedback()
+        {
+
         }
     }
 }

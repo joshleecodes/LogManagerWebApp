@@ -7,12 +7,12 @@
     <title>@Model.Title - LogManager</title>
 
     <environment include="Development">
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
     </environment>
     <environment exclude="Development">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
               asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-fixed-top bg-dark">
+    <nav class="navbar navbar-fixed-top bg-light">
         <div class="container nav-wrapper">
             <div class="navbar-header">
                 <a asp-page="/Index" class="navbar-brand">LogManager</a>
@@ -38,7 +38,7 @@
     </nav>
 
     <form method="get">
-        <div class="modal fade" id="directoryInputModal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label" aria-hidden="true">
+        <div class="modal fade" id="directoryInputModal" tabindex="-1" role="dialog" aria-labelledby="directoryInputLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">

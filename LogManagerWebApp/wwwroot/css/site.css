@@ -2,21 +2,21 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    margin: 5vh 0vw;
-    height: 90vh;
-    width: 95vw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    flex-direction: column;
 }
 
 .navbar {
     border-bottom: solid 1px #e0a800;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: auto;
 }
 
 .navbar-brand {
@@ -31,7 +31,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 3.5vh;
-    align-self: center;
+    width: 30vw;
 }
 
 .modal-header{
@@ -40,31 +40,59 @@ body {
     justify-content: center;
 }
 
-.directory-btn {
-    border-radius: 0 25px 25px 0;
-}
-
-.directory-btn:focus {
-    outline: none;
-}
-
-.container {
-    padding: 0;
+.body-content {
     margin: 0;
+    padding: 0;
+}
+
+
+/*MODAL FADE IN STYLE (DEFAULT BOOTSTRAP BROKEN)*/
+.fade.in {
+    opacity: 1;
+}
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+.modal-backdrop.in {
+    opacity: 0.5;
 }
 
 /*STYLING FOR INDEX ELEMENTS*/
-
 .section-wrapper {
     display: flex;
-    width: 100vw;
     flex-direction: column;
 }
 
 .alert {
-    margin-top: 2px;
     text-align: center;
+    width: 100vw;
+    margin: 0;
 }
 
+.section-content {
+    width: 60vw;
+    margin: 2vh 20vw;
+}
 
+.log-table {
+    width: inherit;
+    text-align: left;
+}
+
+.log-table tr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.log-table-icons a{
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+th, td {
+    width: 15vw;
+}
 /*STYLING FOR HELP ELEMENTS*/

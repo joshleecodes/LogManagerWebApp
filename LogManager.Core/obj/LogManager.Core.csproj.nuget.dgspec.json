@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joshl\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj": {}
+    "C:\\Users\\joshua.lee\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joshl\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj": {
+    "C:\\Users\\joshua.lee\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joshl\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj",
+        "projectUniqueName": "C:\\Users\\joshua.lee\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj",
         "projectName": "LogManager.Core",
-        "projectPath": "C:\\Users\\joshl\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj",
-        "packagesPath": "C:\\Users\\joshl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joshl\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\obj\\",
+        "projectPath": "C:\\Users\\joshua.lee\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\LogManager.Core.csproj",
+        "packagesPath": "C:\\Users\\joshua.lee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joshua.lee\\Documents\\GitHub\\LogManagerWebApp\\LogManager.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\joshl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joshua.lee\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

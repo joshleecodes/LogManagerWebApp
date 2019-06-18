@@ -7,7 +7,7 @@ namespace LogManager.Data
     public interface ILogData
     {
         IEnumerable<Log> GetLogCalled(string name);
-        Log GetLogContaining(string keyword);
+        IEnumerable<Log> GetLogContaining(string keyword);
     }
 
     public class InMemoryLogData : ILogData
@@ -54,6 +54,10 @@ namespace LogManager.Data
             List<Log> Results = new List<Log>();
             foreach (var log in Logs)
             {
+                if(name == null)
+                {
+                    return Logs;
+                }
                 if (log.Name.Contains(name))
                 {
                    Results.Add(log);
@@ -62,9 +66,21 @@ namespace LogManager.Data
             return Results;
         }
 
-        public Log GetLogContaining(string keyword)
+        public IEnumerable<Log> GetLogContaining(string keyword)
         {
-            return Logs.SingleOrDefault(log => log.Content.Contains(keyword));
+            List<Log> Results = new List<Log>();
+            foreach (var log in Logs)
+            {
+                if (keyword == null)
+                {
+                    return Logs;
+                }
+                if (log.Content.Contains(keyword))
+                {
+                    Results.Add(log);
+                }
+            }
+            return Results;
         }
     }
 }

@@ -1,11 +1,3 @@
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.deps.json
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.dll
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.pdb
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.csproj.CoreCompileInputs.cache
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfoInputs.cache
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfo.cs
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.dll
-C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.pdb
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.deps.json
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.dll
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.pdb
@@ -15,3 +7,11 @@ C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netco
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfo.cs
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.dll
 C:\Users\joshl\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.pdb
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.deps.json
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.dll
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\bin\Debug\netcoreapp2.1\LogManager.Core.pdb
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfoInputs.cache
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.AssemblyInfo.cs
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.dll
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManager.Core\obj\Debug\netcoreapp2.1\LogManager.Core.pdb

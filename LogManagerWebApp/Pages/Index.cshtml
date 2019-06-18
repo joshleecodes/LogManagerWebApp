@@ -1,9 +1,56 @@
 ﻿@page
 @model IndexModel
 
-    <div class="section-wrapper">
-        <div class="alert alert-success">
-            <strong>Directory Updated:</strong> A valid directory was entered and the current directory was updated successfully.
-        </div>
-        <h2 class="section-title">@Model.Title</h2>
+<div class="section-wrapper">
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Directory Updated:</strong> A valid directory was entered and the current directory was updated successfully.
     </div>
+
+
+    <div class="section-content">
+        <h2 class="section-title">@Model.Title</h2>
+
+        <form method="get">
+            <div class="form-group">
+                <div class="input-group">
+                    <input type="search" class="form-control" asp-for="SearchTerm" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default">Search</button>
+                    </span>
+                </div>
+            </div>
+        </form>
+
+        <table class="log-table table">
+            <thead class="thead-dark">
+                <th>ID</th>
+                <th>Name</th>
+                <th>Last Modified</th>
+                <th class="log-table-icons">
+                    <a>View</a>
+                    <a>Edit</a>
+                </th>
+            </thead>
+            <hr />
+            @foreach (var log in Model.Logs)
+            {
+        <tr>
+            <th>@log.Id</th>
+            <td>@log.Name</td>
+            <td>@log.LastModified</td>
+            <td>
+                <a class="btn btn-lg" asp-page="./ViewLog" asp-route-restaurantId="@log.Id">
+                    <i class="glyphicon glyphicon-zoom-in"></i>
+                </a>
+                <a class="btn btn-lg" asp-page="./EditLog" asp-route-restaurantId="@log.Id">
+                    <i class="glyphicon glyphicon-edit"></i>
+                </a>
+            </td>
+        </tr>
+            }
+        </table>
+    </div>
+</div>
