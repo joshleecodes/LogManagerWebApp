@@ -16,6 +16,7 @@ namespace LogManagerWebApp.Pages.Shared
 
         public string Title { get; set; }
         public IEnumerable<Log> Logs { get; set; }
+        public IEnumerable<Log> StoredLogs { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public string CurrentDirectory { get; set; }

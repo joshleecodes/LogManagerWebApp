@@ -1,5 +1,7 @@
 ﻿using LogManager.Core;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace LogManager.Data
@@ -8,11 +10,20 @@ namespace LogManager.Data
     {
         IEnumerable<Log> GetLogCalled(string name);
         IEnumerable<Log> GetLogContaining(string keyword);
+        bool CreateLog(string fileDirectory, string name, string[] Lines);
+        bool DeleteLog(int id);
+        bool StampLog(string fileDirectory, int id);
+        bool AddStoredLog(int id);
+        bool RemoveStoredLog(int id);
+        IEnumerable<int> GetStoredLogs();
+        bool ClearStoredLogs();
     }
 
     public class InMemoryLogData : ILogData
     {
         private List<Log> Logs;
+
+        private List<int> StoredLogs;
 
         string[] ExampleContent1 = new string[]
         {
@@ -81,6 +92,91 @@ namespace LogManager.Data
                 }
             }
             return Results;
+        }
+
+        public bool CreateLog(string fileDirectory, string name, string[] Lines)
+        {
+            string path = fileDirectory + "\\" + name;
+            int newId = (Logs[Logs.Count].Id) + 1;
+
+            Log newLog = new Log() {Id=newId, Name=name, Content=Lines, LastModified=DateTime.Now.ToString() };
+
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                foreach(var line in Lines)
+                {
+                    sw.WriteLine(line);
+                }
+            }
+
+            if (Logs.Exists(log => log.Id == newId))
+            {
+                return true;
+            }
+            else return false;
+
+        }
+
+        //Returns a boolean value representing if the element was removed.
+        public bool DeleteLog(int id)
+        {
+            RemoveStoredLog(id);
+            return Logs.Remove(new Log() { Id = id });
+        }
+
+        //Should this method return a boolean value to show if failed?
+        public bool StampLog(string fileDirectory, int id)
+        {
+            foreach (var log in Logs)
+            {
+                if (log.Id.Equals(id))
+                {
+                    using (StreamWriter sw = File.AppendText(fileDirectory))
+                    {
+                        sw.WriteLine(DateTime.Now);
+                    }
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool AddStoredLog(int id)
+        {
+            StoredLogs.Add(id);
+
+            if (StoredLogs.Contains(id))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public bool RemoveStoredLog(int id)
+        {
+            StoredLogs.Remove(id);
+
+            if (StoredLogs.Contains(id))
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public IEnumerable<int> GetStoredLogs()
+        {
+            return StoredLogs;
+        }
+
+        public bool ClearStoredLogs()
+        {
+            StoredLogs.Clear();
+
+            if (StoredLogs.Any())
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

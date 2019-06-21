@@ -83,6 +83,7 @@ C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.TagHelpers.input.cache
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.TagHelpers.output.cache
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\LogManagerWebApp.RazorCoreGenerate.cache
+C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Error.g.cshtml.cs
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Index.g.cshtml.cs
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Logs\List.g.cshtml.cs
 C:\Users\joshua.lee\Documents\GitHub\LogManagerWebApp\LogManagerWebApp\obj\Debug\netcoreapp2.1\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs

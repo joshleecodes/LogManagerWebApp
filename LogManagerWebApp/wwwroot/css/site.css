@@ -17,6 +17,7 @@ body {
 .nav-wrapper {
     display: flex;
     flex-direction: row;
+    height: 5vh;
 }
 
 .navbar-brand {
@@ -40,9 +41,27 @@ body {
     justify-content: center;
 }
 
+.alert {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+}
+
 .body-content {
     margin: 0;
     padding: 0;
+    align-self: center;
+}
+
+.section-content {
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+    width: 50vw;
+}
+
+.section-title {
+    margin-top: 2vh;
 }
 
 
@@ -60,39 +79,26 @@ body {
 }
 
 /*STYLING FOR INDEX ELEMENTS*/
-.section-wrapper {
-    display: flex;
-    flex-direction: column;
-}
 
-.alert {
-    text-align: center;
-    width: 100vw;
+.log-table {
+    display: flex;
+    flex-direction:column;
+    width: inherit;
+    text-align: left;
     margin: 0;
 }
 
-.section-content {
-    width: 60vw;
-    margin: 2vh 20vw;
-}
-
-.log-table {
-    width: inherit;
-    text-align: left;
-}
-
-.log-table tr {
+.table-results {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
-.log-table-icons a{
-    padding: 10px 16px;
-    text-decoration: none;
+.table-results i {
+    justify-content: center;
 }
 
 th, td {
-    width: 15vw;
+    width: 12vw;
 }
+
 /*STYLING FOR HELP ELEMENTS*/
